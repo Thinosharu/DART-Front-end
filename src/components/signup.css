@@ -1,0 +1,184 @@
+/* ========================================================================== 
+   Layout Container - centers whole component vertically and horizontally
+   ========================================================================== */
+.dart-signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #ffffff;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* ========================================================================== 
+     Main Wrapper - horizontal split left and right panes with rounded corners
+     ========================================================================== */
+.dart-signup-wrapper {
+  display: flex;
+  width: 100%;
+  max-width: 900px;
+  height: 550px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+}
+.dart-left-pane,
+.dart-right-pane {
+  flex: 7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.dart-left-pane {
+  background-color: white;
+  border-right: 1px solid #ffffff;
+  padding-left: 40px;
+}
+
+.dart-right-pane {
+  background-color: rgb(144, 41, 35); /* solid red background */
+  color: white;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* ========================================================================== 
+     Form Section inside Left Pane - centers content horizontally
+     ========================================================================== */
+.dart-form-section {
+  width: 100%;
+  max-width: 350px;
+  text-align: center; /* center text and inline elements */
+}
+
+/* === Typography === */
+.dart {
+  color: rgb(144, 41, 35);
+  font-weight: bold;
+  font-size: 2rem;
+  margin: 0.1rem 0 1rem;
+}
+
+.dart-subtext {
+  font-size: 0.9rem;
+  color: rgb(91, 30, 30);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+.dart-form-section img {
+  margin-bottom: 1rem; /* Tightens logo-to-text spacing */
+}
+
+.dart {
+  font-size: 2rem;
+  margin: 2rem 0 0.8rem; /* Less space below “Signup” */
+}
+
+.account {
+  font-size: 2.5rem; /* Increased size */
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 2rem;
+  line-height: 1.2;
+}
+.dart-input-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.dart-input-field {
+  display: flex;
+  align-items: center;
+  border: 2px solid rgb(144, 41, 35);
+  padding: 8px 12px;
+  margin-bottom: 0.8rem;
+  border-radius: 9px;
+  background-color: #f8f8f8;
+}
+
+.dart-icon {
+  font-size: 1rem;
+  color: rgb(144, 41, 35);
+  margin-right: 10px;
+}
+.dart-input-field input::placeholder {
+  color: rgb(144, 41, 35);
+  opacity: 0.7;
+}
+
+.dart-button-group {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 100px;
+}
+
+.dart-secondary-button {
+  background: #a22c29;
+  color: rgb(255, 255, 255);
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 60px;
+}
+
+.dart-secondary-button:hover {
+  background-color: darkred;
+}
+.dart-right-pane .dart-button-group {
+  justify-content: center;
+  padding-left: 0;
+  width: 100%;
+}
+
+.button {
+  background-color: rgb(144, 41, 35);
+  border: none;
+}
+
+.button:hover {
+  background-color: darkred;
+}
+
+/* ========================================================================== 
+     Login prompt inside right pane
+     ========================================================================== */
+.dart-login-prompt {
+  text-align: center;
+  margin-top: 1rem;
+  width: 100%;
+}
+/* DART logo image size */
+.dart-form-section img {
+  width: 150px !important; /* increase logo size */
+  height: auto;
+  margin-bottom: 0.2rem;
+}
+
+/* Signup heading */
+.dart {
+  color: rgb(144, 41, 35);
+  font-weight: 600;
+  font-size: 1.3rem; /* smaller font */
+  margin: 0.2rem 0 0.5rem;
+}
+
+/* Reduce space below subtitle */
+.dart-subtext {
+  font-size: 0.85rem;
+  color: rgb(91, 30, 30);
+  line-height: 1.4;
+  margin-bottom: 1.2rem; /* reduce gap */
+}
+.dart-icon {
+  font-size: 0.9rem;
+  color: rgb(144, 41, 35);
+  margin-right: 8px;
+}
+
