@@ -81,7 +81,7 @@ const HeroSection = () => {
             <p className="account">
               Already have an<br></br> account?
             </p>
-            <div className="signup-button">
+            <div className=" ">
               <button className="button" onClick={handleRoleSelect}>
                 Signup
               </button>

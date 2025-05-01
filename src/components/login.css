@@ -77,7 +77,7 @@
   
   .account {
     color: #ffffff;
-    font-size: 1.8rem;
+    font-size: 2.1rem;
     font-weight: bold;
     margin-bottom: 1.5rem;
   }
@@ -129,10 +129,6 @@
   .dart-input-field input::placeholder {
     color:#902923(144, 41, 35);
   }
-  
-  /* ==========================================================================
-     Remember Me & Forgot Password
-     ========================================================================== */
   .remember-me {
     display: flex;
     align-items: center;
@@ -176,24 +172,13 @@
   .button {
     background-color:#902923(144, 41, 35);
     color: white;
-    font-size: 1rem;
+    font-size:2rem;
     padding: 0.75rem 2rem;
     border-radius: 5px;
   }
   
-  /* ==========================================================================
-     Login Prompt
-     ========================================================================== */
-  .dart-login-prompt {
-    margin-top: 1.5rem;
-    text-align: center;
-    font-size: 0.9rem;
-    color: #eee;
-  }
-  
-  .dart-login-prompt a {
-    color: white;
-    font-weight: bold;
+  .button:hover {
+    background-color: #902923(144, 41, 35);
   }
   
   /* ==========================================================================
@@ -247,10 +232,6 @@
   
     .dart-heading {
       font-size: 1.75rem;
-    }
-  
-    .account {
-      font-size: 1.6rem;
     }
   
     .dart-forgot-password {

@@ -23,17 +23,9 @@
 }
 .dart-left-pane,
 .dart-right-pane {
-  flex: 7;
-  display: flex;
   align-items: center;
   justify-content: center;
   padding: 20px;
-}
-
-.dart-left-pane {
-  background-color: white;
-  border-right: 1px solid #ffffff;
-  padding-left: 40px;
 }
 
 .dart-right-pane {
@@ -78,54 +70,47 @@
 }
 
 .account {
-  font-size: 2.5rem; /* Increased size */
+  font-size: 3.5rem; /* Increased size */
   font-weight: bold;
   color: #ffffff;
   margin-bottom: 2rem;
   line-height: 1.2;
 }
-.dart-input-list {
-  display: flex;
-  flex-direction: column;
-  gap: 0rem;
-  margin-top: 20px;
-  width: 100%;
-}
 
 .dart-input-field {
-  display: flex;
-  align-items: center;
-  border: 2px solid rgb(144, 41, 35);
-  padding: 8px 12px;
+  border: 3px solid rgb(144, 41, 35);
   margin-bottom: 0.8rem;
   border-radius: 9px;
-  background-color: #f8f8f8;
+  width: 100%;
+  max-width: 300px; /* Prevent full stretch */
+  display: flex;
+  align-items: center;
 }
 
-.dart-icon {
-  font-size: 1rem;
-  color: rgb(144, 41, 35);
-  margin-right: 10px;
-}
 .dart-input-field input::placeholder {
   color: rgb(144, 41, 35);
-  opacity: 0.7;
+  font-size: 0.9rem;
+  font-weight: 400;
+  padding-left: 20px;
+  margin-bottom: 0.8rem;
 }
 
 .dart-button-group {
   display: flex;
-  justify-content: flex-start;
-  padding-left: 100px;
+  justify-content: center; /* Center the button */
+  width: 100%;
+  margin-top: 1rem;
+  padding-left: 0; /* Remove offset */
 }
-
 .dart-secondary-button {
-  background: #a22c29;
-  color: rgb(255, 255, 255);
+  width: 300px;
+  padding: 10px;
   font-size: 1rem;
+  background: #a22c29;
+  color: white;
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  margin-right: 60px;
 }
 
 .dart-secondary-button:hover {
@@ -140,10 +125,19 @@
 .button {
   background-color: rgb(144, 41, 35);
   border: none;
+  font-size: 1rem;
+  font-family: "Segoe UI", sans-serif;
+  font-weight: bold;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 .button:hover {
   background-color: darkred;
+  size: 100px; /* Increase size on hover */
+  transition: all 0.3s ease;
 }
 
 /* ========================================================================== 
@@ -153,6 +147,7 @@
   text-align: center;
   margin-top: 1rem;
   width: 100%;
+  max-width: 300px; /* Prevent full stretch */
 }
 /* DART logo image size */
 .dart-form-section img {
@@ -168,16 +163,9 @@
   font-size: 1.3rem; /* smaller font */
   margin: 0.2rem 0 0.5rem;
 }
-
-/* Reduce space below subtitle */
-.dart-subtext {
-  font-size: 0.85rem;
-  color: rgb(91, 30, 30);
-  line-height: 1.4;
-  margin-bottom: 1.2rem; /* reduce gap */
-}
 .dart-icon {
-  font-size: 0.9rem;
+  width: 20px;
+  height: 15px;
   color: rgb(144, 41, 35);
   margin-right: 8px;
 }

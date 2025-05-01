@@ -37,7 +37,7 @@ const HeroSection = () => {
               </p>
             </center>
 
-            <div className="dart-input-list">
+            <div className="dart-input-list dart-form-section">
               <div className="dart-input-field">
                 <FaUser className="dart-icon" />
                 <input type="text" placeholder="Username" />

@@ -3,7 +3,6 @@ import { useNavigate } from "react-router-dom";
 import "./HeroSection.css";
 import { GrLanguage } from "react-icons/gr";
 
-
 const HeroSection = () => {
   const navigate = useNavigate();
 
@@ -35,23 +34,36 @@ const HeroSection = () => {
           </div>
 
           <div className="nav-items">
-  <div className="center-nav-links">
-    <a href="#home" className="nav-link">Home</a>
-    <a href="#about" className="nav-link">About</a>
-    <a href="#services" className="nav-link">Services</a>
-    <a href="#features" className="nav-link">Features</a>
-    <a href="#contact" className="nav-link">Contact Us</a>
-  </div>
-<div>
-<div className="right-buttons">
-    <button className="container">
-      <GrLanguage /> EN
-    </button>
-    <button className="login-button" onClick={handleNavigateTologin}>
-      Login
-    </button>
-  </div>
-</div>
+            <div className="center-nav-links">
+              <a href="#home" className="nav-link">
+                Home
+              </a>
+              <a href="#about" className="nav-link">
+                About
+              </a>
+              <a href="#services" className="nav-link">
+                Services
+              </a>
+              <a href="#features" className="nav-link">
+                Features
+              </a>
+              <a href="#contact" className="nav-link">
+                Contact Us
+              </a>
+            </div>
+            <div>
+              <div className="right-buttons">
+                <button className="container">
+                  <GrLanguage /> EN
+                </button>
+                <button
+                  className="login-button"
+                  onClick={handleNavigateTologin}
+                >
+                  Login
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </nav>
@@ -61,14 +73,17 @@ const HeroSection = () => {
         <section className="left-section">
           <div className="hero-content">
             <h1 className="main-heading">
-              Generate Accurate<br /> BOQs for Your <br />
-              Home Plans with<br /> Ease
+              Generate Accurate
+              <br /> BOQs for Your <br />
+              Home Plans with
+              <br /> Ease
             </h1>
             <p className="sub-text">
-              Struggling with manual cost estimation? Our <br /> platform quickly
-              generates accurate BOQs  <br />from your CAD designs, making the process <br />
-              effortless, efficient, and reliable—so you can  <br />focus on building
-              with confidence.
+              Struggling with manual cost estimation? Our <br /> platform
+              quickly generates accurate BOQs <br />
+              from your CAD designs, making the process <br />
+              effortless, efficient, and reliable—so you can <br />
+              focus on building with confidence.
             </p>
             <p className="cta-text">Start planning smarter today!</p>
             <div className="button-group">
@@ -82,11 +97,12 @@ const HeroSection = () => {
 
         {/* Right Section */}
         <section className="right-section">
-          <div className="image-container">
-            <div className="placeholder-image">
-              <span className="image-text">CAD Design Preview</span>
-            </div>
-           
+          <div className="">
+            <img
+              src="images/1.png"
+              alt=" "
+              className="boq-image"
+            />
           </div>
         </section>
       </div>
