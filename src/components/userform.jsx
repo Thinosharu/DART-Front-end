@@ -1,5 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import "./userform.css";
+import { useNavigate } from "react-router-dom";// Match file name exactly
+
 
 const countryCodes = {
   "Sri Lanka": "+94",
@@ -8,9 +10,10 @@ const countryCodes = {
   USA: "+1",
 };
 
-const MultiStepForm = () => {
+const UserForm = () => {
   const [step, setStep] = useState(1);
   const formRefs = useRef([]);
+  const navigate = useNavigate(); 
 
   const [formData, setFormData] = useState({
     name: "",
@@ -136,7 +139,23 @@ const MultiStepForm = () => {
               <option value="">-- Select Standard --</option>
               <option value="SLS">SLS 573</option>
               <option value="IS">POMI</option>
-              <option value="Other">NRM 2</option>
+              <option value="Other">SRM 274 / SCA/4/1</option>
+              <option value="Other">BOMI
+              </option>
+              <option value="Other">CPWD DSR
+              </option>
+              <option value="Other">IS 1200
+              </option>
+              <option value="Other">CSI MasterFormat
+              </option>
+              <option value="Other">ANZSMM
+              </option>
+              <option value="Other">CESMM4
+              </option>
+              <option value="Other">FIDIC BOQ
+              </option>
+              <option value="Other">SMM7</option>
+              <option value="Other">Other</option>
             </select>
           </div>
         )}
@@ -162,17 +181,22 @@ const MultiStepForm = () => {
           </button>
         )}
         {step < 7 ? (
-          <button className="next-button" onClick={handleNext}>
-            Next
-          </button>
-        ) : (
-          <button className="submit-button" onClick={() => alert("Form submitted!")}>
-            Submit
-          </button>
-        )}
-      </div>
+        <button className="next-button" onClick={handleNext}>
+          Next
+        </button>
+      ) : (
+        <button
+          className="submit-button"
+          onClick={() => {
+            navigate("/thank"); 
+          }}
+        >
+          Submit
+        </button>
+      )}
     </div>
+  </div>
   );
 };
 
-export default MultiStepForm;
+export default UserForm;
